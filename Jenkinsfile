@@ -11,6 +11,7 @@ pipeline
         {
             steps
             {
+                echo "I am changing the pipeline code"
                 echo "this is a set up process ${NewVersion}"
             }
         }
