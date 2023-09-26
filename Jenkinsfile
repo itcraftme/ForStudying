@@ -2,7 +2,7 @@ pipeline
 {
     agent any
     tools{
-        JDK 'JDK'
+        jdk 'JDK'
     }
     parameters{
         string(name: "VERSION", defaultValue:"" , description:"this is the version name")
