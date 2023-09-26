@@ -19,7 +19,7 @@ pipeline
         {
              steps
             {
-                echo "I did not see it, this is test"
+                echo "testing it main build test should not build, this is test"
             }
         }
         stage("clearup")
