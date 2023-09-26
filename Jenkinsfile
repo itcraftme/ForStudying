@@ -19,7 +19,7 @@ pipeline
         {
              steps
             {
-                echo "I changed this, this is test"
+                echo "For automatically triggering the build, this is test"
             }
         }
         stage("clearup")
