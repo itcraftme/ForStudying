@@ -19,7 +19,7 @@ pipeline
         {
              steps
             {
-                echo "trigger it again, this is test"
+                echo "I did not see it, this is test"
             }
         }
         stage("clearup")
