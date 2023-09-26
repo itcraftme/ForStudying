@@ -38,7 +38,6 @@ pipeline
             }
              steps
             {
-                echo: [ServerCredential, ServerCredential_PSW]
                 withCredentials([
                     usernamePassword(credentials:'ServerCred',usernameVariable:USER,passwordVariable:PWD)
                 ]){
