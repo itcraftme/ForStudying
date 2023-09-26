@@ -39,7 +39,7 @@ pipeline
              steps
             {
                 withCredentials([
-                    usernamePassword(credentials:'ServerCred',usernameVariable:USER,passwordVariable:PWD)
+                    usernamePassword(credentials:'ServerCred',usernameVariable:USR,passwordVariable:PWD)
                 ]){
                     sh "some script"
                 }
