@@ -19,7 +19,7 @@ pipeline
         {
              steps
             {
-                echo "this is test"
+                echo "I changed this, this is test"
             }
         }
         stage("clearup")
