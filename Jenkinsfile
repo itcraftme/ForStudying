@@ -9,9 +9,14 @@ pipeline
     {
         stage("setup")
         {
+            when{
+                expression {
+                    BRANCH_NAME == 'main'
+                }
+            }
             steps
             {
-                echo "I am changing the pipeline code"
+                echo "I am changing the pipeline code only for main "
                 echo "this is a set up process ${NewVersion}"
             }
         }
