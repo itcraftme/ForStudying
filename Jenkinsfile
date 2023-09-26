@@ -38,11 +38,11 @@ pipeline
             }
              steps
             {
-                echo "this is the credential for server ${ServerCredential}"
+                echo: [ServerCredential, ServerCredential_PSW]
                 withCredentials([
                     usernamePassword(credentials:'ServerCred',usernameVariable:USER,passwordVariable:PWD)
                 ]){
-                    sh "some script ${USER} ${PWD}"
+                    sh "some script"
                 }
                 echo "8th build, this is test"
             }
