@@ -5,7 +5,7 @@ pipeline
         jdk 'JDK'
     }
     parameters{
-        string(name: "VERSION", defaultValue:"" , description:"this is the version name")
+        string(name: "Discription", defaultValue:"Discription" , description:"Discription")
         choice(name: "VERSION", choices:['1.1.0','1.2.0','1.3.0'], description:"choices for versions")
         booleanParam(name: "ExecuteOrNot", defaultValue:true, , description:"to indicate it will be executed or not")
     }
