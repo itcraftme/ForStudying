@@ -41,7 +41,7 @@ pipeline
                 withCredentials([
                     usernamePassword(credentialsId:'ServerCred',usernameVariable:'USERNAME',passwordVariable:'PASSWORD')
                 ]){
-                    sh "some script"
+                    echo "some script $USERNAME"
                 }
                 echo "8th build, this is test"
             }
